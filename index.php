@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 $dbname = 'mysql';  // don't update this line 
 $dbuser = 'admin';
-$dbpass = '';
+$dbpass = getenv('DB_PASS');
 $dbhost = '';
  
 $link = mysqli_connect($dbhost, $dbuser, $dbpass) or die("Unable to Connect to '$dbhost'");
