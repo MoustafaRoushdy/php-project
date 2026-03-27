@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$dbname = 'mysql';  
+$dbname = 'mysql';  // this is a change
 $dbuser = getenv('DB_USER') ? 'admin';
 $dbpass = getenv('DB_PASS');
 $dbhost = '';
